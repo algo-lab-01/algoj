@@ -1,4 +1,4 @@
-package com.lab01.arrays;
+package com.lab01;
 
 import java.util.Arrays;
 import java.util.concurrent.ThreadLocalRandom;
@@ -11,7 +11,7 @@ import java.util.concurrent.ThreadLocalRandom;
  * search
  *
  */
-public class ArrayLab {
+public class ArrayMain {
     public static void main(String[] args) {
         //1.1 Print array
         int[] a = new int[0];
@@ -21,7 +21,7 @@ public class ArrayLab {
 
         //1.2 Print array custom
         startTime = System.currentTimeMillis();
-        System.out.printf("Empty array print using Custom class"+ ArrayLab.arrayToStringV1(a));
+        System.out.printf("Empty array print using Custom class"+ ArrayMain.arrayToStringV1(a));
         System.out.println(" -- Execution time in ms"+(System.currentTimeMillis()-startTime));
 
         //2.1 Random number pick from array
@@ -45,13 +45,13 @@ public class ArrayLab {
     public static String arrayToStringV1(int[] a){
         StringBuilder stringBuilder = new StringBuilder();
         stringBuilder.append("[");
-        for (int i=0; i<a.length; i++){
-            stringBuilder.append(a[i]);
+        for (int j : a) {
+            stringBuilder.append(j);
             stringBuilder.append(" ,");
         }
-        int lastindex = stringBuilder.lastIndexOf(" ,");
+        int lastIndex = stringBuilder.lastIndexOf(" ,");
         stringBuilder.append("]");
-        return lastindex > -1 ? stringBuilder.replace(lastindex, lastindex+2, "").toString() : stringBuilder.toString();
+        return lastIndex > -1 ? stringBuilder.replace(lastIndex, lastIndex+2, "").toString() : stringBuilder.toString();
     }
 
 }
