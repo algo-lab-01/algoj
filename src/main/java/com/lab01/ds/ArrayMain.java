@@ -1,4 +1,4 @@
-package com.lab01;
+package com.lab01.ds;
 
 import java.util.Arrays;
 import java.util.concurrent.ThreadLocalRandom;

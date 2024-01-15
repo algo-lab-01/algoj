@@ -1,4 +1,4 @@
-package com.lab01;
+package com.lab01.ds;
 
 public class QueueMain {
     public static void main(String[] args) {
