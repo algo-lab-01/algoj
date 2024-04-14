@@ -7,10 +7,10 @@ import java.util.*;
 public class GraphMain {
     public static void main(String[] args) {
         Graph<String> graph = new Graph();
-        graph.addEdge("Hemant", "Nikhil", false);
-        graph.addEdge("Hemant", "Ankur", false);
-        graph.addEdge("Hemant", "Anand", false);
-        graph.addEdge("Hemant", "Ankit", false);
+        graph.addEdge("Hemant", "Nikhil", true);
+        graph.addEdge("Hemant", "Ankur", true);
+        graph.addEdge("Hemant", "Anand", true);
+        graph.addEdge("Hemant", "Ankit", true);
         System.out.println(graph);
     }
 }
